@@ -1,0 +1,11 @@
+.pregame {
+	display: inline;
+}
+
+.game {
+	display: none;
+}
+
+.end-game {
+	display: none;
+}

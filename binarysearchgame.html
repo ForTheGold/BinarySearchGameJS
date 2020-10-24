@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary Search Game</title>
+	<link rel="stylesheet" type="text/css" href="binarysearchgame.css">
+</head>
+
+<body>
+	
+	<div class="pregame" id="pregame">
+		<h1>Rules of the game</h1>
+		<p>Enter two search bounds and a number between those bounds for safe keeping.  I will not know the number is, but I will keep it on display for you to remember.<br>
+		I will guess your number in the stated number of guesses or less.  All you have to do is tell me if my your number is higher or lower than my guess and I will eventually make it to the right number.<br>
+		I will use a binary search alogrithm in order to solve the problem.</p>
+
+		<label>Low Bound: </label><input type="textbox" name="low" id="low"><br>
+		<label>High Bound: </label><input type="textbox" name="high" id="high"><br>
+		<label>Your number: </label><input type="textbox" name="num" id="num"><br>
+		<button type="submit" name="go" id="go">GO!</button>
+	</div>
+
+	<div class="game" id="game">
+		<p id="game-intro"></p>
+		<h3 id="your-number">Your Number: </h3>
+		<h3 id="my-guess">My guess: </h3>
+		<p id="guess-number"></p>
+		<p id="question">Should I guess lower?  Am I correct?  Or should I guess higher?</p>
+		<button type="submit" name="lower" id="lower">Guess Lower!</button><button type="submit" name="cor" id="cor">Got it!</button><button type="submit" name="higher" id="higher">Guess Higher!</button>
+		<p id="error"></p>
+	</div>
+
+	<div class="end-game" id="end-game">
+		<p id="last-p"></p>
+	</div>
+
+</body>
+<script type="text/javascript" src="binarysearchgame.js"></script>
+</html>
